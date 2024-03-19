@@ -1,0 +1,121 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color-scheme: light dark;
+}
+.errorViewer {
+  text-align: center;
+}
+.redText {
+  color: red;
+}
+.inputBox {
+  text-align: center;
+  margin: 50px auto;
+}
+.inputStyle {
+  width: 25%;
+  border: none;
+  border-bottom: 2px solid rgb(139, 139, 139);
+  font-size: 2em;
+  text-align: center;
+  background-color: #121212;
+}
+.inputStyle:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/*Card style*/
+.container {
+  display: flex;
+}
+
+.container .childContainer:first-child {
+  width: 40%;
+  margin: 0 30px;
+}
+.container .childContainer:last-child {
+  width: 60%;
+  margin: 0 30px;
+}
+.cardCointainer {
+  border: 1px solid rgb(255, 255, 255);
+  width: 70%;
+  margin: 0 auto 20px auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cardImg,
+.detailsImg {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cardCointainer h4 {
+  margin: 20px 10px;
+}
+.clickBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.clickBtn:hover {
+  border-color: #646cff;
+}
+.clickBtn:focus,
+.clickBtn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.clickBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+}
+/*detailsViewer component*/
+.detailsContainer > image {
+  width: 100%;
+  overflow: hidden;
+}
+/* Extra small devices (phones, up to 576px) */
+@media (max-width: 576px) {
+  /* CSS styles for extra small devices */
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  /* CSS styles for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {
+    display: block;
+    width: 100% !important;
+  }
+  .childContainer {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .detailsContainer {
+    margin: 0 20px;
+  }
+}
