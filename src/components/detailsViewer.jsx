@@ -106,7 +106,7 @@ export default ({ detailsUrl, apiKeys, foodId, setError, errorr }) => {
       }
 
       if (data === null) {
-        setError("Failed to fetch data");
+        setError("Your daily points limit of 150 has been reached. Please upgrade your plan to continue using the API.");
         setFullDetails({});
       } else {
         setError(null);
