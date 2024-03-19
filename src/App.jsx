@@ -55,7 +55,7 @@ function App() {
           </div>
         </>
       ) : (
-        <h1 className="errorViewer">{errorr}</h1>
+        
       )}
     </>
   );
